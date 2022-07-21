@@ -2,6 +2,7 @@ package com.magadiflo.app;
 
 import com.magadiflo.app.models.Animal;
 import com.magadiflo.app.models.Book;
+import com.magadiflo.app.models.Client;
 import com.magadiflo.app.models.Person;
 
 public class Test {
@@ -29,6 +30,18 @@ public class Test {
         Book bookNoArgs = new Book();
         Book bookWithId = new Book(2L);
         Book bookWithAllArgs = new Book(1L, "Cien años de soledad", "Libro emblemático");
+
+        //===================================
+        Client client1 = Client.builder()
+                .firstName("Laura")
+                .build();
+        System.out.println(client1);
+
+        Client client2 = Client.builder()
+                .lastName("Armstrong")
+                .age(45)
+                .build();
+        System.out.println(client2);
 
     }
 
