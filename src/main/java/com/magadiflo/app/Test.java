@@ -1,6 +1,7 @@
 package com.magadiflo.app;
 
 import com.magadiflo.app.models.Animal;
+import com.magadiflo.app.models.Book;
 import com.magadiflo.app.models.Person;
 
 public class Test {
@@ -23,6 +24,11 @@ public class Test {
         animal.setName("Peluchina");
         animal.setRace("Criollo");
         System.out.println(animal);
+
+        //===================================
+        Book bookNoArgs = new Book();
+        Book bookWithId = new Book(2L);
+        Book bookWithAllArgs = new Book(1L, "Cien años de soledad", "Libro emblemático");
 
     }
 
