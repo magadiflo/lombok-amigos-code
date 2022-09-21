@@ -12,6 +12,12 @@ import lombok.extern.slf4j.Slf4j;
  * no lo podrá hacer, actualmente no es soportado esa funcionalidad, así que tendríamos que crearlo
  * como tradicionalmente se crea un constructor.
  * @NoArgsConstructor, Permite crear un constructor vacío.
+ *
+ * @EqualsAndHashCode
+ * Esta anotación crea los métodos equals() y hashCode(), ya que ambos están unidos por el contrato hashCode.
+ * De forma predeterminada, ambos métodos incluirán todos los campos, excepto los estáticos y transitorios.
+ * Al igual que el parámetro 'exclude' del @ToString impide que un campo se incluya en los métodos implementados.
+ * También como @ToString podemos incluir opcionalmente el parámetro 'callSuper'.
  */
 
 @ToString
